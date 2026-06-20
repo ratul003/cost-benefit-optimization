@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cost-benefit-optimization.vercel.app"),
   title: "Cost-Benefit Optimization of Order Stacking, Wahid Tawsif Ratul",
   description:
-    "Applied analytics at foodpanda | Delivery Hero Bangladesh: finding optimal ML order-assignment stacking levels via cost-benefit analysis, covariance, Pearson correlation, and multi-linear regression on operational KPIs. BigQuery, R, Tableau.",
+    "Applied analytics at a regional food-delivery platform: finding optimal ML order-assignment stacking levels via cost-benefit analysis, covariance, Pearson correlation, and multi-linear regression on operational KPIs. BigQuery, R, Tableau.",
   openGraph: {
     title: "Cost-Benefit Optimization of Order Stacking",
     description: "Where algorithmic order stacking stops paying for itself, cost vs. customer experience, modeled.",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cost-Benefit Optimization of Order Stacking",
-    description: "foodpanda stacking optimization via cost-benefit analytics.",
+    description: "Order-stacking optimization via cost-benefit analytics.",
   },
 };
 

@@ -5,7 +5,7 @@ export const contentType = "image/png";
 export const alt = "Cost-Benefit Optimization of Order Stacking";
 
 const ACCENT = "#f97316";
-const TAG = "Applied Analytics · foodpanda";
+const TAG = "Applied Analytics · Food Delivery";
 const TITLE = "Cost-Benefit Optimization of Order Stacking";
 const SUB = "Finding the stacking level where algorithmic dispatch stops paying for itself.";
 

@@ -4,18 +4,17 @@ const data: CaseStudyData = {
   accent: "#f97316",
   accentRgb: "249, 115, 22",
   accentLight: "#fdba74",
-  category: "Applied Analytics · foodpanda | Delivery Hero · Bangladesh",
+  category: "Applied Analytics · Food Delivery",
   title: "Cost-Benefit Optimization of Order Stacking",
   tagline:
-    "Finding the stacking level where algorithmic order assignment stops paying for itself, quantifying the trade between delivery cost and customer experience across the largest food-delivery platform in Bangladesh.",
+    "Finding the stacking level where algorithmic order assignment stops paying for itself, quantifying the trade between delivery cost and customer experience across a regional food-delivery platform.",
   meta: [
-    { label: "Company", value: "foodpanda | Delivery Hero" },
-    { label: "Region", value: "Bangladesh" },
+    { label: "Company", value: "Regional food-delivery platform" },
+    { label: "Region", value: "South Asia" },
     { label: "Window", value: "Jan-Dec 2022" },
     { label: "Stack", value: "BigQuery · R · Tableau" },
   ],
   heroLogos: [
-    { domain: "foodpanda.com", label: "foodpanda" },
     { domain: "cloud.google.com", label: "BigQuery" },
     { domain: "tableau.com", label: "Tableau" },
     { domain: "r-project.org", label: "R" },
@@ -30,7 +29,7 @@ const data: CaseStudyData = {
       label: "Overview",
       heading: "How much stacking is too much?",
       paras: [
-        "Built at foodpanda | Delivery Hero in Bangladesh, the country's largest food-delivery platform, as part of an initiative to drive top-line profitability while keeping a healthy customer experience at optimal cost efficiency.",
+        "Built at a leading regional food-delivery platform, as part of an initiative to drive top-line profitability while keeping a healthy customer experience at optimal cost efficiency.",
         "The objective: determine the optimal \"ML algorithmic order assignment\" stacking levels using cost-benefit analysis. Stacking is efficient for riders and cheaper per order, but pushed too far it degrades delivery times and customer experience. The question is where the line sits.",
       ],
       blocks: [
