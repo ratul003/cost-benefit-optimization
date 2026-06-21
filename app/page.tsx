@@ -79,7 +79,7 @@ const data: CaseStudyData = {
               "Customer experience",
               "Customer reorder rates",
               "Rider efficiency rate",
-              "Seamless, on-time orders",
+              "On-time order completion",
             ],
           },
           right: {
