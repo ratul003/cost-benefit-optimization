@@ -41,3 +41,10 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Reference source material — contains real company/country names; never ship
+original-project/
+stacking_prediction.Rmd
+*.Rmd
+modeling.txt
+slides.txt
