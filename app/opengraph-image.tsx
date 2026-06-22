@@ -2,11 +2,11 @@ import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Cost-Benefit Optimization of Order Stacking";
+export const alt = "Cost-Benefit Optimization of Order Assignment in On-Demand Marketplace";
 
 const ACCENT = "#f97316";
-const TAG = "Applied Analytics · Food Delivery";
-const TITLE = "Cost-Benefit Optimization of Order Stacking";
+const TAG = "Applied Analytics · On-Demand Marketplace";
+const TITLE = "Cost-Benefit Optimization of Order Assignment";
 const SUB = "Finding the stacking level where algorithmic dispatch stops paying for itself.";
 
 export default function Image() {

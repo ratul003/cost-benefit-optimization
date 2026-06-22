@@ -24,7 +24,7 @@ function Pin({ x, y, label, sub, color, dim }: { x: number; y: number; label: st
       <circle cx={x} cy={y} r="13" fill="var(--background)" stroke={color} strokeWidth="2.5" />
       <circle cx={x} cy={y} r="4.5" fill={color} />
       <text x={x} y={y + 30} textAnchor="middle" fontSize="12" fontWeight="700" fill="var(--foreground)">{label}</text>
-      <text x={x} y={y + 44} textAnchor="middle" fontSize="9.5" fill="var(--foreground-subtle)" textTransform="uppercase">{sub}</text>
+      <text x={x} y={y + 44} textAnchor="middle" fontSize="9.5" fill="var(--foreground-subtle)" style={{ textTransform: "uppercase", letterSpacing: "0.06em" }}>{sub}</text>
     </g>
   );
 }
@@ -94,11 +94,11 @@ export default function AssignmentFlow() {
       <div style={{ marginTop: "14px", padding: "16px 18px", borderRadius: "12px", background: stacked ? "rgba(var(--accent-rgb),0.06)" : "var(--surface)", border: `1px solid ${stacked ? "rgba(var(--accent-rgb),0.28)" : "var(--border-subtle)"}`, transition: "all .3s" }}>
         {stacked ? (
           <p style={{ fontSize: "0.9rem", color: "var(--foreground)", lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: "var(--accent)" }}>Stacked:</strong> one shared pickup at the vendor, then two drop-offs in sequence. The second order rides for free on the pickup leg — that is the <strong>~25% rider-cost saving</strong>. But Customer&nbsp;1&apos;s drop-off now sits in front of Customer&nbsp;2, so <strong>C2 waits longer</strong> — and delivery time climbs with every extra stop.
+            <strong style={{ color: "var(--accent)" }}>Stacked:</strong> one shared pickup at the vendor, then two drop-offs in sequence. The second order rides for free on the pickup leg, that is the <strong>~25% rider-cost saving</strong>. But Customer&nbsp;1&apos;s drop-off now sits in front of Customer&nbsp;2, so <strong>C2 waits longer</strong>, and delivery time climbs with every extra stop.
           </p>
         ) : (
           <p style={{ fontSize: "0.9rem", color: "var(--foreground-muted)", lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: "var(--foreground)" }}>Single:</strong> one pickup, one drop-off, shortest possible delivery time — but the rider pays the full pickup cost for this one order. No economies of scale.
+            <strong style={{ color: "var(--foreground)" }}>Single:</strong> one pickup, one drop-off, shortest possible delivery time, but the rider pays the full pickup cost for this one order. No economies of scale.
           </p>
         )}
       </div>

@@ -47,7 +47,7 @@ function Frame({ children, caption }: { children: React.ReactNode; caption: stri
 function xAxis(activeIdx: number | null) {
   return (
     <>
-      {/* optimal window 20–24% */}
+      {/* optimal window 20 to 24% */}
       <rect x={sx(20)} y={M.t} width={sx(24) - sx(20)} height={PH} fill="rgba(52,211,153,0.08)" />
       <text x={(sx(20) + sx(24)) / 2} y={M.t + 14} textAnchor="middle" fontSize="10" fill="#34d399" fontWeight="700">OPTIMAL</text>
       {/* status-quo line at 24% */}
@@ -75,7 +75,7 @@ export function PredictionCurves() {
   const grid = [75, 100, 125, 150, 175];
 
   return (
-    <Frame caption="Model predictions indexed to the 24% status quo (=100). Refund cost climbs steeply with stacking while rider cost barely moves — the saving the experiment chased never materialises. Bands: optimal 20–24% window. Source: four multi-linear regressions, Jan–Dec 2022.">
+    <Frame caption="Model predictions indexed to the 24% status quo (=100). Refund cost climbs steeply with stacking while rider cost barely moves, so the saving the experiment chased never materialises. Shaded: optimal 20 to 24% window. Source: four multi-linear regressions, Jan to Dec 2022.">
       {grid.map((g) => (
         <g key={g}>
           <line x1={M.l} y1={sy(g)} x2={M.l + PW} y2={sy(g)} stroke="var(--border-subtle)" strokeWidth="1" />
@@ -127,7 +127,7 @@ export function CrossoverChart() {
   const area = `${sx(STACK[0])},${zero} ${pts} ${sx(STACK[STACK.length - 1])},${zero}`;
 
   return (
-    <Frame caption="Net fully-loaded economics per order vs the 24% baseline (rider-cost saving minus refund-cost increase). Above zero = cheaper than status quo. Every step up in stacking is net-negative; the only profitable move is downward toward ~19–20%. Delivery-time-driven compensation and churn — not shown — push the real curve down further.">
+    <Frame caption="Net fully-loaded economics per order vs the 24% baseline (rider-cost saving minus refund-cost increase). Above zero means cheaper than status quo. Every step up in stacking is net negative, and the only profitable move is downward toward 19 to 20%. Delivery-time-driven compensation and churn, not shown here, push the real curve down further.">
       <defs>
         <linearGradient id="posg" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="rgba(52,211,153,0.35)" />

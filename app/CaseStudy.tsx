@@ -337,7 +337,7 @@ export default function CaseStudy({ data }: { data: CaseStudyData }) {
         <div style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 24px", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
             <a className="nav-name" href="https://wahid-ratul.vercel.app" style={{ fontSize: "0.85rem", fontWeight: 700, color: "var(--foreground)", textDecoration: "none" }}>
-              Wahid Tawsif Ratul
+              Cost-Benefit Optimization
             </a>
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               {socials.map((s) => (
@@ -354,8 +354,8 @@ export default function CaseStudy({ data }: { data: CaseStudyData }) {
               ))}
             </div>
           </div>
-          <a href="https://wahid-ratul.vercel.app/#research" style={{ fontSize: "0.82rem", color: "var(--foreground-muted)", textDecoration: "none" }}>
-            ← All research
+          <a href="https://wahid-ratul.vercel.app" style={{ fontSize: "0.82rem", color: "var(--foreground-muted)", textDecoration: "none" }}>
+            ← Portfolio
           </a>
         </div>
       </nav>

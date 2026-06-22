@@ -52,8 +52,8 @@ export default function StackingExplorer() {
   const fmt = (n: number, d = 2) => (n >= 0 ? "+" : "") + n.toFixed(d);
   const optimal = s >= 20 && s <= 24;
   const verdict =
-    net > 0.02 ? { txt: "Net positive — cheaper than status quo", c: "#34d399", bg: "rgba(52,211,153,0.1)", bd: "rgba(52,211,153,0.4)" }
-    : net < -0.02 ? { txt: "Net negative — costs more than it saves", c: "#f43f5e", bg: "rgba(244,63,94,0.1)", bd: "rgba(244,63,94,0.4)" }
+    net > 0.02 ? { txt: "Net positive, cheaper than status quo", c: "#34d399", bg: "rgba(52,211,153,0.1)", bd: "rgba(52,211,153,0.4)" }
+    : net < -0.02 ? { txt: "Net negative, costs more than it saves", c: "#f43f5e", bg: "rgba(244,63,94,0.1)", bd: "rgba(244,63,94,0.4)" }
     : { txt: "Break-even with status quo", c: "var(--foreground-muted)", bg: "var(--surface)", bd: "var(--border-subtle)" };
 
   // gauge: map net from -0.5..+0.25 onto 0..100, zero at the right spot
@@ -78,7 +78,7 @@ export default function StackingExplorer() {
           aria-label="Overall stacking percentage"
           style={{ width: "100%", accentColor: "var(--accent)", position: "relative", cursor: "pointer" }} />
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.66rem", color: "var(--foreground-subtle)", marginTop: "4px", fontVariantNumeric: "tabular-nums" }}>
-          <span>15%</span><span style={{ color: "#34d399" }}>20–24% optimal</span><span>40%</span>
+          <span>15%</span><span style={{ color: "#34d399" }}>20 to 24% optimal</span><span>40%</span>
         </div>
       </div>
 
@@ -105,7 +105,7 @@ export default function StackingExplorer() {
         <span style={{ fontSize: "0.9rem", fontWeight: 600, color: verdict.c }}>{verdict.txt}</span>
       </div>
       <p style={{ fontSize: "0.74rem", color: "var(--foreground-subtle)", marginTop: "12px", fontStyle: "italic", lineHeight: 1.5 }}>
-        Net = rider-cost saving − refund-cost increase, from models m2/m4 (interpolated between the five tested levels). The delivery-time channel — which feeds further compensation and churn — is shown but not yet priced in, so the real curve sits lower still.
+        Net = rider-cost saving minus refund-cost increase, from models m2 and m4 (interpolated between the five tested levels). The delivery-time channel, which feeds further compensation and churn, is shown but not yet priced in, so the real curve sits lower still.
       </p>
     </div>
   );
